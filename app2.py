@@ -123,7 +123,7 @@ elif option =='Coba Altair':
             tooltip=[
                 alt.Tooltip("provinsi", title="Provinsi"),
                 alt.Tooltip("jml", title="Jumlah dari {}".format(total)),
-                alt.Tooltip("persen:% dari{}".format(total))
+                alt.Tooltip("persen", "dari {}".format(total))
             ]
             )
     st.altair_chart(cbgalt, use_container_width=True)
