@@ -117,8 +117,11 @@ elif option == 'Chart Semua':
     st.pyplot(fig4)
     
 elif option =='Coba Altair':
-    
-    st.altair_chart(smua, use_container_width=True)
+    cbgalt = alt.Chart(df_a_prov).mark_bar().encode(
+            x='jml',
+            y='provinsi'
+            )
+    st.altair_chart(cbgalt, use_container_width=True)
 
 # st.altair_chart(
 #     alt.Chart(filtered_terms)
