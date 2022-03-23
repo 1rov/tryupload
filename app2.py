@@ -17,7 +17,7 @@ df_a_prov['persen'] = round(((df_a_prov['jml'] / total) * 100),2)
 
 option = st.selectbox(
     'Silakan pilih:',
-    ('Home','Data Provinsi','Chart','Chart Semua')
+    ('Home','Data Provinsi','Chart','Chart Semua','Coba Altair')
 )
 
 if option == 'Home' or option == '':
@@ -115,3 +115,16 @@ elif option == 'Chart Semua':
     smua.set_title("Jumlah Data Per Provinsi", size=20)
     plt.yticks(size=14)
     st.pyplot(fig4)
+    
+elif option =='Coba Altair':
+    st.altair_chart(
+    alt.Chart(df_a_prov)
+    .mark_bar(tooltip=True)
+#     .encode(
+#         x="count:Q",
+#         y=alt.Y("term:N", sort="-x"),
+#         color=alt.Color(value=COLOR_BLUE),
+#     
+    ),
+    use_container_width=True,
+)
