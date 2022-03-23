@@ -117,6 +117,7 @@ elif option == 'Chart Semua':
     st.pyplot(fig4)
     
 elif option =='Coba Altair':
+    COLOR_BLUE = "#1C83E1"
     st.altair_chart(
         alt.Chart(df_a_prov)
         .mark_bar(tooltip=True)
