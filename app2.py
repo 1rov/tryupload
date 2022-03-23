@@ -122,10 +122,8 @@ elif option =='Coba Altair':
         .mark_bar(tooltip=True)
         .encode(
         x="df_a_prov.jml",
-        y="df_a_prov.provinsi"),
-        color=alt.Color(value=COLOR_BLUE),
-    ),
-        ,
+        y="df_a_prov.provinsi",
+        color=alt.Color(value=COLOR_BLUE)),
     use_container_width=True)
 
 # st.altair_chart(
