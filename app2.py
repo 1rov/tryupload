@@ -120,6 +120,7 @@ elif option =='Coba Altair':
     cbgalt = alt.Chart(df_a_prov).mark_bar(tooltip=True).encode(
             x='jml',
             y='provinsi',
+            color='provinsi',
             tooltip=[
                 alt.Tooltip("provinsi", title="Provinsi"),
                 alt.Tooltip("jml", title="Jumlah"),
