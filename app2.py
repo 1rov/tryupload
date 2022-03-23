@@ -123,7 +123,7 @@ elif option =='Coba Altair':
             tooltip=[
                 alt.Tooltip("provinsi", title="Provinsi"),
                 alt.Tooltip("jml", title="Jumlah"),
-                alt.Tooltip(title="dari {}".format(total)),
+                alt.Tooltip(total, title="Dari total"),
                 alt.Tooltip("persen", title="%")
             ]
             )
