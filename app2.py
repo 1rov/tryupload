@@ -118,11 +118,7 @@ elif option == 'Chart Semua':
     
 elif option =='Coba Altair':
     
-    st.altair_chart(
-        alt.Chart(df_a_prov)
-        .mark_bar(tooltip=True)
-        .encode(x="df_a_prov.jml", y="df_a_prov.provinsi"),
-    use_container_width=True)
+    st.altair_chart(smua, use_container_width=True)
 
 # st.altair_chart(
 #     alt.Chart(filtered_terms)
