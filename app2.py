@@ -118,7 +118,7 @@ elif option == 'Chart Semua':
     
 elif option =='Coba Altair':
     cbgalt = alt.Chart(df_a_prov).mark_bar(tooltip=True).encode(
-            x='jml,
+            x='jml',
             y='provinsi'
             )
     st.altair_chart(cbgalt, use_container_width=True)
