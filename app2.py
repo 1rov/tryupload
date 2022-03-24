@@ -123,6 +123,7 @@ elif option =='Coba Altair':
             x=alt.X('jml:Q', sort='ascending'),
             y='provinsi',
             color = alt.Color('provinsi', legend=None),
+            order=alt.Order("jml", sort="descending"),
             tooltip=[
                 alt.Tooltip("provinsi", title="Provinsi"),
                 alt.Tooltip("jml", title="Jumlah"),
