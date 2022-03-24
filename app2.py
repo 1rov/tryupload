@@ -120,8 +120,8 @@ elif option =='Coba Altair':
     st.write("""## Grafik Interaktif Jumlah Data Per Provinsi""") #menampilkan judul halaman 
     df_a_prov = df_a_prov.sort_values('jml',ascending=False)
     cbgalt = alt.Chart(df_a_prov).mark_bar(tooltip=True).encode(
-            x=alt.X('jml:Q', sort='descending'),
-            y='provinsi',
+            x=alt.X('jml:Q', sort='ascending'),
+            y=alt.Y('provinsi:N', sort='descending'),
             color = alt.Color('provinsi', legend=None),
             tooltip=[
                 alt.Tooltip("provinsi", title="Provinsi"),
