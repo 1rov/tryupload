@@ -126,12 +126,12 @@ elif option =='Coba Altair':
                 sort=alt.EncodingSortField(field="jml", order="descending"),
                 title="",
             ),
-#             color = alt.Color('provinsi', legend=None),
-            color=alt.Color(
-                'provinsi',
-                legend=alt.Legend(title="Provinsi"),
-                scale=alt.Scale(scheme="category10"),
-            ),
+            color = alt.Color('provinsi', legend=None),
+#             color=alt.Color(
+#                 'provinsi',
+#                 legend=alt.Legend(title="Provinsi"),
+#                 scale=alt.Scale(scheme="category10"),
+#             ),
             tooltip=[
                 alt.Tooltip("provinsi", title="Provinsi"),
                 alt.Tooltip("jml", title="Jumlah"),
